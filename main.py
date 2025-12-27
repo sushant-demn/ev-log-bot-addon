@@ -7,9 +7,9 @@ import base64
 
 load_dotenv(override=True)
 
-scooter_id = os.getenv("scooter_id")
-api_token = os.getenv("api_token")
-webhook_url = os.getenv("webhook_url")
+scooter_id = os.getenv("SCOOTER_ID")
+api_token = os.getenv("API_TOKEN")
+webhook_url = os.getenv("WEBHOOK_URL")
 
 
 def get_scooter_details(scooter_id, api_token, limit=None, sort_order="asc"):
